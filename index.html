@@ -21,28 +21,40 @@
     <header>
       <h1>Your <span class="ai-font">ai</span> Financial Advisor</h1>
     </header>
-    <div class="main-container">
     <main>
-        <h2 id="ask-h2">What is your financial status?</h2>
-      <form id="advice-search-form">
-        <input
-          type="text"
-          placeholder="State your financial status .."
-          autofocus
-          required
-          autocomplete="off"
-          class="search-input"
-          id="search-input"
-        />
-        <input type="submit" value="Search" class="search-button" />
-      </form>
-      <p class="example">eg: Wealthy, Pay-to-pay cheque, poverty</p>
-      <div class="financial-advice-container">
-        <div class="financial-advice-content" id="financial-advice-content">
-          content
+      <div class="main-container">
+        <div id="formSection">
+          <h2 id="ask-h2">What is your financial status?</h2>
+          <form id="advice-search-form">
+            <input
+              type="text"
+              placeholder="State your financial status .."
+              autofocus
+              required
+              autocomplete="off"
+              class="search-input"
+              id="search-input"
+            />
+            <input
+              type="submit"
+              value="Next"
+              class="search-button"
+              id="search-button"
+            />
+          </form>
+          <p class="example" id="example">
+            eg: Wealthy, Pay-to-pay cheque, poverty
+          </p>
+        </div>
+        <div
+          class="financial-advice-container displayNone"
+          id="financial-advice-container"
+        >
+          <div class="financial-advice-content" id="financial-advice-content">
+            content
+          </div>
         </div>
       </div>
-    </div>
     </main>
     <footer>
       <p>
